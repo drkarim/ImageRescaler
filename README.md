@@ -6,7 +6,9 @@ It uses ITK's C++ [RescaleIntensityImageFilter](https://itk.org/Doxygen/html/cla
 
 The following equation gives the mapping of the intensity values:
 
+
 ![equation](http://mathurl.com/y7eppsyj.png)
+
 
 Note that this repository demonstrates a simple usage of ITK's rescale filters. Similar examples can be found in [ITK examples Wiki](https://itk.org/Wiki/ITK/Examples/ImageProcessing/RescaleIntensityImageFilter).
 
