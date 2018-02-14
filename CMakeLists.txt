@@ -10,3 +10,7 @@ ENDIF(ITK_FOUND)
 
 ADD_EXECUTABLE(irescale irescale.cpp)
 TARGET_LINK_LIBRARIES(irescale ${ITK_LIBRARIES})
+
+if (UNIX)
+	INSTALL(TARGETS irescale DESTINATION /usr/local/bin)
+endif (UNIX)
