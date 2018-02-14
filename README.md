@@ -12,9 +12,7 @@ The following equation gives the mapping of the intensity values:
 
 Note that this repository demonstrates a simple usage of ITK's rescale filters. Similar examples can be found in [ITK examples Wiki](https://itk.org/Wiki/ITK/Examples/ImageProcessing/RescaleIntensityImageFilter).
 
-The code also has other rescaling options through ITK's filters such as [Cast Image Filter](https://itk.org/Doxygen/html/classitk_1_1CastImageFilter.html), [Shift Scale Filter](https://itk.org/Doxygen/html/classitk_1_1ShiftScaleImageFilter.html) and [Normalise Filter](https://itk.org/Doxygen/html/classitk_1_1NormalizeImageFilter.html). But, these to be activated within the code by changing the ImageFileWriter's code: 
-
-    writer->SetInput(rescaleFilter->GetOutput());    // change filter name 
+The code also has other rescaling options through ITK's filters such as [Cast Image Filter](https://itk.org/Doxygen/html/classitk_1_1CastImageFilter.html), [Shift Scale Filter](https://itk.org/Doxygen/html/classitk_1_1ShiftScaleImageFilter.html) and [Normalise Filter](https://itk.org/Doxygen/html/classitk_1_1NormalizeImageFilter.html). And, these can be activated by using the command line switches described below.
 
 ## Usage
 ```
@@ -32,6 +30,10 @@ The code also has other rescaling options through ITK's filters such as [Cast Im
 
 ## Dependencies
 This code has to be built from source using [CMake](https://cmake.org/). It has some dependencies as it requires to perform 3D medical image processing. For these purposes, it depends on the [Image Registration Toolkit (ITK)](https://itk.org/) 
+
+
+## Platforms 
+This code has been tested on Windows 7 on Visual Studio 2015 and MacOS Sierra 10.12 running native g++ compilers. 
 
 
 ## Author 
