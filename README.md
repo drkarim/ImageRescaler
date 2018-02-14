@@ -16,4 +16,28 @@ The code also has other rescaling options through ITK's filters such as [Cast Im
 
     writer->SetInput(rescaleFilter->GetOutput());    // change filter name 
 
+## Usage
+```
+ irescale (followed with the these switches)
+   -i <input 3D Image> 
+   -o <output image> 
 
+   (optional) 
+   -s <which rescaler 1-4 below> 
+      1 = itk::itkRescaleIntensityImageFilter (0-255)
+      2 = itk::CastImageFilter (Window=0-255, please within modify code)
+      3 = itk::ShiftScaleImageFilter (scale=1, shift=0)
+      4 = itk::NormalizeImageFilter
+```
+
+## Dependencies
+This code has to be built from source using [CMake](https://cmake.org/). It has some dependencies as it requires to perform 3D medical image processing. For these purposes, it depends on the [Image Registration Toolkit (ITK)](https://itk.org/) 
+
+
+## Author 
+
+```
+Dr. Rashed Karim 
+Department of Biomedical Engineering 
+King's College London 
+```
