@@ -14,7 +14,7 @@ Note that this repository demonstrates a simple usage of ITK's rescale filters. 
 
 The code also has other rescaling options through ITK's filters such as [Cast Image Filter](https://itk.org/Doxygen/html/classitk_1_1CastImageFilter.html), [Shift Scale Filter](https://itk.org/Doxygen/html/classitk_1_1ShiftScaleImageFilter.html) and [Normalise Filter](https://itk.org/Doxygen/html/classitk_1_1NormalizeImageFilter.html). And, these can be activated by using the command line switches described below. 
 
-For converting between file types NRRD, NiFTII and GIPL simply use the (https://itk.org/Doxygen/html/classitk_1_1CastImageFilter.html), [Shift Scale Filter] option within the code (switch: -s 3). 
+For converting between file types NRRD, NiFTII and GIPL simply use the [Shift Scale Filter](https://itk.org/Doxygen/html/classitk_1_1ShiftScaleImageFilter.html) option within the code (switch: -s 3). It shifts by 0 and scales by 1, essentially leaving intensities un-changed. 
 
 ## Usage
 ```
