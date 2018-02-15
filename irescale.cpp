@@ -36,7 +36,7 @@ int main(int argc, char * argv[])
 					foundArgs2 = true;
 				}
 
-				else if (string(argv[i]) == "-r") {
+				else if (string(argv[i]) == "-s") {
 					input_f2 = atoi(argv[i + 1]);
 					foundArgs3 = true;
 				}
@@ -66,7 +66,7 @@ int main(int argc, char * argv[])
 
 
 		typedef   double   InputPixelType;
-		typedef   unsigned char            OutputPixelType;
+		typedef   short            OutputPixelType;
 
 		typedef itk::Image< InputPixelType, 3 >   InputImageType;
 		typedef itk::Image< OutputPixelType, 3 >   OutputImageType;
