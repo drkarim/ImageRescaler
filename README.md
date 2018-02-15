@@ -29,7 +29,11 @@ The code also has other rescaling options through ITK's filters such as [Cast Im
 ```
 
 ### Using only for file conversion
-This code is also useful for simply converting between file types NRRD, NiFTII and GIPL. Skip the linear transformation stage, and only use its [Shift Scale Filter](https://itk.org/Doxygen/html/classitk_1_1ShiftScaleImageFilter.html) option within the code (switch: -s 3). It shifts by 0 and scales by 1, essentially leaving intensities un-changed. 
+This code is also useful for simply converting between file types NRRD, NiFTII and GIPL. Skip the linear transformation stage, and only use its [Shift Scale Filter](https://itk.org/Doxygen/html/classitk_1_1ShiftScaleImageFilter.html) option within the code (switch: -s 3). It shifts by 0 and scales by 1, essentially leaving intensities un-changed. Here's how to convert from NifTII to GIPL format, without any rescaling:
+
+```
+irescale -i input.nii -o output.gipl -s 3
+```
 
 ## Dependencies
 This code has to be built from source using [CMake](https://cmake.org/). It has some dependencies as it requires to perform 3D medical image processing. For these purposes, it depends on the [Image Registration Toolkit (ITK)](https://itk.org/) 
